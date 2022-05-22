@@ -30,3 +30,12 @@
 *.exe
 *.out
 *.app
+
+# avoid pushing cmake dirs
+cmake-build-debug
+
+# jetbrains
+.idea
+
+# vscode
+.vscode
