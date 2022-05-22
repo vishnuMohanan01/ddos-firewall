@@ -11,8 +11,14 @@ pcap_t* handle;
 int linkhdrlen;
 int packets;
 
+
 pcap_t* create_pcap_handle(char* device, char* filter)
 {
+    /*
+     * creates a binary packet filter and binds it to the
+     * pcap handle which is connected to the device
+     * */
+
     char errbuf[PCAP_ERRBUF_SIZE];
     pcap_t *handle = NULL;
     pcap_if_t* devices = NULL;
