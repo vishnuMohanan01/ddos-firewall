@@ -4,4 +4,4 @@ cmake_minimum_required(VERSION 3.10)
 project(ddos-firewall)
 
 # add the executable
-add_executable(ddos-firewall firewall.cxx)
+add_executable(ddos-firewall main.c)
