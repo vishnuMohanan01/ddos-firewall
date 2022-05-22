@@ -42,7 +42,7 @@ pcap_t* create_pcap_handle(char* device, char* filter)
         return NULL;
     }
 
-    // Convert the packet filter epxression into a packet filter binary.
+    // Convert the packet filter expression into a packet filter binary.
     if (pcap_compile(handle, &bpf, filter, 0, netmask) == PCAP_ERROR) {
         fprintf(stderr, "pcap_compile(): %s\n", pcap_geterr(handle));
         return NULL;
